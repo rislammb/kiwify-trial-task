@@ -46,7 +46,7 @@ const Login = () => {
    * @param {object} values
    */
   const submit = (values) => {
-    console.log('Submitted values are: ', values);
+    alert('Submitted values are: ', values);
   };
 
   useEffect(() => {
