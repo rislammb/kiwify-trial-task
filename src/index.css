@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 *,
 ::before,
 ::after {
@@ -27,3 +23,10 @@ html {
 body {
   margin: 0;
 }
+
+.focus\:shadow-outline-blue:focus {
+  box-shadow: 0 0 0 3px rgb(164 202 254 / 45%);
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
