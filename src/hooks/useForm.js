@@ -47,6 +47,11 @@ const useForm = (initial, validate) => {
       oldState[name].value = value;
     }
 
+    const { errors } = validate(mapFormStateToValues(oldState));
+    if (errors[name] && oldState[name].touched) {
+      oldState[name].error = errors[name];
+    }
+
     setState(oldState);
   };
 
